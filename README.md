@@ -18,7 +18,27 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+c = Matr.new(m: [[1,2],[4,5]])
+
+# умонжение матриц
+
+M = Matr.new([[1, 2, 3], [3, 2, 1]])
+N = Matr.new([0, 1, 1])
+p M*N # => [5, 3]
+
+# сложение матриц
+
+M = Matr.new([[1, 3], [-2, 3]])
+N = Matr.new([[0, 3], [0, 7]])
+p M + N # => [[1, 6], [-2, 10]]
+
+#умножение матрицы на число
+M = Matr.new([[1, 3], [-2, 3]])
+a = 5
+p M*a
+
+```
 
 ## Development
 
